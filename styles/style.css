@@ -1,0 +1,148 @@
+@font-face {
+  font-family: armyRust;
+  src: url("../assets/fonts/ArmyRust/ARMYRUST.ttf");
+}
+
+body {
+  font-family: armyRust;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../assets/sprites/PNG/background2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body h1, body p {
+  margin: 0;
+}
+
+body .game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+body .game canvas {
+  position: relative;
+}
+
+body .game .map {
+  position: relative;
+}
+
+body .game .map .field {
+  position: absolute;
+}
+
+body .game .ui {
+  display: none;
+  width: 256px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #e0dada;
+}
+
+body .game .ui__title, body .game .ui__points {
+  width: 256px;
+  height: 50px;
+  background-image: url("../assets/UI/Cell256x50.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .game .ui__title {
+  text-align: center;
+  line-height: 50px;
+}
+
+body .game .ui__points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 32px;
+}
+
+body .game .ui__points__lives, body .game .ui__points__cash, body .game .ui__points__wave {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .game .ui__points__lives img, body .game .ui__points__cash img, body .game .ui__points__wave img {
+  width: 22px;
+  height: 22px;
+  padding: 0 8px;
+}
+
+body .game .ui__towers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 256px;
+  height: 192px;
+  background-image: url("../assets/UI/Cell256x192.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .game .ui__towers div {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  background-image: url("../assets/UI/Cell50x50.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .game .ui__towers__tower {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+}
+
+body .game .ui__towers__tower:hover {
+  background-color: lightgray;
+}
+
+body .game .selected-tower {
+  display: none;
+}
+
+body .game .selected-tower--active {
+  display: block;
+  position: absolute;
+  cursor: none;
+}
+
+body .game .start-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=style.css.map */

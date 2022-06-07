@@ -1,0 +1,131 @@
+@font-face {
+    font-family: armyRust;
+    src: url("../assets/fonts/ArmyRust/ARMYRUST.ttf");
+}
+
+body {
+    font-family: armyRust;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("../assets/sprites/PNG/background2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1, p {
+        margin: 0;
+    }
+
+    .game {
+        display: flex;
+        overflow: hidden;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        
+        canvas {
+            position: relative;
+        }
+    
+        .map {
+            position: relative;
+            
+            .field {
+                position: absolute;
+            }
+        }
+
+        .ui {
+            display: none;
+            width: 256px;
+            align-self: flex-start;
+            flex-wrap: wrap;
+            color: rgb(224, 218, 218);
+
+            &__title, &__points {
+                width: 256px;
+                height: 50px;
+                background-image: url("../assets/UI/Cell256x50.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &__title {
+                text-align: center;
+                line-height: 50px;
+            }
+
+            &__points {
+                display: flex;
+                font-size: 32px;
+
+                &__lives, &__cash, &__wave {
+                    flex-basis: 50%;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 22px;
+                        height: 22px;
+                        padding: 0 8px;
+                    }
+                }
+            }
+
+            &__towers {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 256px;
+                height: 192px;
+                background-image: url("../assets/UI/Cell256x192.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                div {
+                    position: relative;
+                    width: 55px;
+                    height: 55px;
+                    background-image: url("../assets/UI/Cell50x50.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                &__tower {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: 55px;
+                    height: 55px;
+                    cursor: pointer;
+    
+                    &:hover {
+                        background-color: rgb(211, 211, 211);
+                    }
+                }
+            }
+        }
+
+        .selected-tower {
+            display: none;
+
+            &--active {
+                display: block;
+                position: absolute;
+                cursor: none;
+            }
+        }
+
+        .start-screen {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

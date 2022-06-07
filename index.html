@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Defense</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="game">
+        <div class="map"></div>
+        <canvas></canvas>
+        <div class="ui">
+            <div class="ui__title">
+                <h1>Nazwa mapy</h1>
+            </div>
+            <div class="ui__points">
+                <div class="ui__points__lives">
+                    <img src="/assets/UI/HPIcon.png" alt="lives">
+                    <p>20</p>
+                </div>
+                <div class="ui__points__cash">
+                    <img src="/assets/UI/MoneyIcon.png" alt="cash">
+                    <p>100</p>
+                </div>
+                <div class="ui__points__wave">
+                    <img src="/assets/UI/Star.png" alt="wave">
+                    <p>1</p>
+                </div>
+            </div>
+            <div class="ui__towers">
+                <div>
+                    <img src="../assets/sprites/PNG/32/towerDefense_tile203.png" alt="Basic Tower" class="ui__towers__tower" data-tower="203">
+                </div>
+                <div>
+                    <img src="../assets/sprites/PNG/32/towerDefense_tile204.png" alt="" class="ui__towers__tower" data-tower="204">
+                </div>
+                <div>
+                    <img src="../assets/sprites/PNG/32/towerDefense_tile205.png" alt="" class="ui__towers__tower" data-tower="205">
+                </div>
+                <div>
+                    <img src="../assets/sprites/PNG/32/towerDefense_tile206.png" alt="" class="ui__towers__tower" data-tower="206">
+                </div>
+                <div>
+                    <img src="../assets/sprites/PNG/32/towerDefense_tile203.png" alt="Basic Tower" class="ui__towers__tower" data-tower="203">
+                </div>
+                <div>
+                    <img src="../assets/sprites/PNG/32/towerDefense_tile204.png" alt="" class="ui__towers__tower" data-tower="204">
+                </div>
+                <div>
+                    <img src="../assets/sprites/PNG/32/towerDefense_tile205.png" alt="" class="ui__towers__tower" data-tower="205">
+                </div>
+                <div>
+                    <img src="../assets/sprites/PNG/32/towerDefense_tile206.png" alt="" class="ui__towers__tower" data-tower="206">
+                </div>
+                <div>
+                    <img src="../assets/sprites/PNG/32/towerDefense_tile203.png" alt="Basic Tower" class="ui__towers__tower" data-tower="203">
+                </div>
+                <div>
+                    <img src="../assets/sprites/PNG/32/towerDefense_tile204.png" alt="" class="ui__towers__tower" data-tower="204">
+                </div>
+                <div>
+                    <img src="../assets/sprites/PNG/32/towerDefense_tile205.png" alt="" class="ui__towers__tower" data-tower="205">
+                </div>
+                <div>
+                    <img src="../assets/sprites/PNG/32/towerDefense_tile206.png" alt="" class="ui__towers__tower" data-tower="206">
+                </div>
+            </div>
+            <div class="ui__statistics">
+                <h1>Nazwa elementu</h1>
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div> 
+            </div>
+            <div class="ui__announcements">
+
+            </div>
+            <div class="ui__settings"></div>
+            
+            
+        </div>
+        <img src="" alt="selected-tower" class="selected-tower">
+        <div class="start-screen">
+            <button>Start game</button>
+        </div>
+    </div>
+    
+    <script src="./js/Game.js"></script>
+    <script src="./js/Map.js"></script>
+    <script src="./js/Field.js"></script>
+    <script src="./js/Enemy.js"></script>
+    <script src="./js/Tower.js"></script>
+    <script src="./js/Wave.js"></script>
+    <script src="./js/Projectile.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

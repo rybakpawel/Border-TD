@@ -1,0 +1,4 @@
+1. Wstępny projekt graficzny
+2. Znalezienie assetów
+3. Ustalenie zasad gry
+4. Wstępna konfiguracja
